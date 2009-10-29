@@ -23,20 +23,20 @@ outputs:
 
 === API
 
-NanoTest has a single method: +assert+. You can either include NanoTest as
+NanoTest has a single method: #assert. You can either include NanoTest as
 above, or use its method directly:
 
   NanoTest.assert { true }
 
-Its block is expected to return a boolean. If it's false (+== false+) it fails,
+Its block is expected to return a boolean. If it's false (== false) it fails,
 otherwise it passes. Simple as that.
 
-+assert+ also accepts a custom failure message (defaults to "assertion failed"):
+#assert also accepts a custom failure message (defaults to "assertion failed"):
 
   assert("foo is too small") { @foo > 5 }
 
 as well as a file name and line number, in case you want to do something fancy
-and call +assert+ from somewhere else in the stack
+and call #assert from somewhere else in the stack
 
   def assert_includes(collection, item)
     file = caller.first.split(':')[0]
@@ -57,11 +57,11 @@ outputs:
 === Links
 
 source:: http://github.com/mynyml/nanotest
-docs::   http://docs.github.com/mynyml/nanotest
+docs::   http://rdoc.info/projects/mynyml/nanotest
 wiki::   http://wiki.github.com/mynyml/nanotest
 bugs::   http://github.com/mynyml/nanotest/issues
 
 
-
-tl;dr: is small test fw. is fun. assert("msg") { bool }
+===== tl;dr
+is small test fw. is fun. assert("msg") { bool }
 
