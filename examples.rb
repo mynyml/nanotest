@@ -26,6 +26,5 @@ __END__
 output:
 
 ....FF
-(examples.rb:22) assertion failed
-(examples.rb:23) boom
-
+(examples.rb:022) assertion failed
+(examples.rb:023) boom

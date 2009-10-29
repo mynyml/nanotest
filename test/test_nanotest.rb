@@ -33,13 +33,13 @@ class TestNanoTest < MiniTest::Unit::TestCase
       @line = __LINE__; NanoTest.assert { false }
     end
     assert_equal 1, NanoTest::FAILURES.size
-    assert_includes NanoTest::FAILURES, "(#{__FILE__}:#{@line}) assertion failed"
+    assert_includes NanoTest::FAILURES, "(%s:%0.3d) assertion failed" % [__FILE__, @line]
   end
 
   test "custom failure message, file, line" do
     capture_io do
       NanoTest.assert('foo','bar',2) { false }
     end
-    assert_includes NanoTest::FAILURES, "(bar:2) foo"
+    assert_includes NanoTest::FAILURES, "(bar:002) foo"
   end
 end

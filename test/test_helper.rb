@@ -1,5 +1,10 @@
 require 'minitest/autorun'
 require 'nanotest'
+begin
+  require 'redgreen'
+  require 'phocus'
+rescue LoadError, RuntimeError
+end
 
 class MiniTest::Unit::TestCase
   def self.test(name, &block)

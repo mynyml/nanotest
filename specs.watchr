@@ -18,9 +18,9 @@ end
 # --------------------------------------------------
 # Watchr Rules
 # --------------------------------------------------
-watch( '^examples\.rb'         )  { |m| run( "ruby -rubygems -Ilib %s"              % m[0] ) }
-watch( '^test.*/test_.*\.rb'   )  { |m| run( "ruby -rubygems -Ilib %s"              % m[0] ) }
-watch( '^lib/(.*)\.rb'         )  { |m| run( "ruby -rubygems -Ilib test/test_%s.rb" % m[1] ) }
+watch( '^examples\.rb'         )  { |m| system( "ruby -rubygems -Ilib %s"              % m[0] ) }
+watch( '^test.*/test_.*\.rb'   )  { |m|    run( "ruby -rubygems -Ilib %s"              % m[0] ) }
+watch( '^lib/(.*)\.rb'         )  { |m|    run( "ruby -rubygems -Ilib test/test_%s.rb" % m[1] ) }
 watch( '^test/test_helper\.rb' )  { run_all_tests }
 
 # --------------------------------------------------

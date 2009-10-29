@@ -62,6 +62,5 @@ wiki::   http://wiki.github.com/mynyml/nanotest
 bugs::   http://github.com/mynyml/nanotest/issues
 
 
-===== tl;dr
-is small test fw. is fun. assert("msg") { bool }
+tl;dr: is small test fw. is fun. assert("msg") { bool }
 

@@ -7,7 +7,7 @@ module NanoTest
     if block.call == false
       file ||= caller.first.split(':')[0]
       line ||= caller.first.split(':')[1]
-      FAILURES << "(#{file}:#{line}) #{msg}"
+      FAILURES << "(%s:%0.3d) %s" % [file,line,msg]
       print 'F'
     else
       print '.'
