@@ -1,8 +1,3 @@
-begin
-  require 'yard'
-rescue LoadError, RuntimeError
-end
-
 # --------------------------------------------------
 # Gem
 # --------------------------------------------------
@@ -53,9 +48,10 @@ end
 # --------------------------------------------------
 # Docs
 # --------------------------------------------------
-if defined? YARD
-  YARD::Rake::YardocTask.new do |t|
-    t.files   = %w( lib/**/*.rb )
-    t.options = %w( -o doc/yard --readme README.rdoc --files LICENSE )
-  end
+desc "Generate YARD Documentation"
+task :yardoc do
+  require 'yard'
+  files   = %w( lib/**/*.rb )
+  options = %w( -o doc/yard --readme README.rdoc --files LICENSE )
+  YARD::CLI::Yardoc.run *(options + files)
 end
