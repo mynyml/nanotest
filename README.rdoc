@@ -1,13 +1,13 @@
-==== Summary
+=== Summary
 
 Most. Mymynal. Test Framework. Ever! Perfect for DIY lovers. NanoTest provides
 the bare mynymum needed; for everything else, there's ruby.
 
-==== Install
+=== Install
 
   gem install nanotest --source http://gemcutter.org
 
-==== Examples
+=== Examples
 
   require 'nanotest'
   include NanoTest
@@ -21,7 +21,7 @@ outputs:
   ..F
   (examples.rb:12) assertion failed
 
-==== API
+=== API
 
 NanoTest has a single method: +assert+. You can either include NanoTest as
 above, or use its method directly:
