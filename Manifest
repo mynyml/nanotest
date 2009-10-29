@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+Manifest
+README.rdoc
+Rakefile
+examples.rb
+gem.watchr
+lib/nanotest.rb
+specs.watchr
+test/test_helper.rb
+test/test_nanotest.rb
