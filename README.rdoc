@@ -19,7 +19,7 @@ the bare mynymum needed; for everything else, there's ruby.
 outputs:
 
   ..F
-  (examples.rb:12) assertion failed
+  (examples.rb:012) assertion failed
 
 === API
 
@@ -33,10 +33,11 @@ otherwise it passes. Simple as that.
 
 #assert also accepts a custom failure message (defaults to "assertion failed"):
 
-  assert("foo is too small") { @foo > 5 }
+  assert("foo is too small") { @foo > 5 } #line 36
+  #=> (examples.rb:036) foo is too small
 
-That's pretty much it. If you insist on doing something fancy, check out the
-wiki for a few tips and tricks.
+That's pretty much it. Maximum Simplicity. If you insist on doing something
+fancy, check out the wiki for a few tips and tricks.
 
 === Links
 
