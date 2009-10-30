@@ -4,8 +4,8 @@
 def gemspec
   @gemspec ||= Gem::Specification.new do |s|
     s.name                = "nanotest"
-    s.summary             = "Out of my way, test framework!"
-    s.description         = "Most. Miminal. Test Framework. Ever! Perfect for DIY lovers."
+    s.summary             = "When all you need is #assert"
+    s.description         = "Extremely mynymal test framework. Perfect for DIY lovers. NanoTest provides the bare mynymum needed; for everything else, there's ruby."
     s.author              = "Martin Aumont"
     s.email               = "mynyml@gmail.com"
     s.homepage            = "http://github.com/mynyml/nanotest"
