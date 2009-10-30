@@ -1,5 +1,4 @@
 require 'nanotest'
-
 include NanoTest
 
 class Foo
@@ -26,5 +25,5 @@ __END__
 output:
 
 ....FF
-(examples.rb:022) assertion failed
-(examples.rb:023) boom
+(examples.rb:021) assertion failed
+(examples.rb:022) boom

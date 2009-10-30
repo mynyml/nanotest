@@ -1,6 +1,6 @@
 === Summary
 
-Most. Mymynal. Test Framework. Ever! Perfect for DIY lovers. NanoTest provides
+Extremely mynymal test framework. Perfect for DIY lovers. NanoTest provides
 the bare mynymum needed; for everything else, there's ruby.
 
 === Install
@@ -35,24 +35,8 @@ otherwise it passes. Simple as that.
 
   assert("foo is too small") { @foo > 5 }
 
-as well as a file name and line number, in case you want to do something fancy
-and call #assert from somewhere else in the stack
-
-  def assert_includes(collection, item)
-    file = caller.first.split(':')[0]
-    line = caller.first.split(':')[1]
-    msg = "expected #{collection.inspect} to include #{item.inspect}"
-    assert(msg, file, line) { collection.include?(item) }
-  end
-
-  foos = [1,2,3]
-  assert_includes(foos, 3)
-  assert_includes(foos, 4) #line 46
-
-outputs:
-
-  .F
-  (examples.rb:46) expected [1, 2, 3] to include 4
+That's pretty much it. If you insist on doing something fancy, check out the
+wiki for a few tips and tricks.
 
 === Links
 
