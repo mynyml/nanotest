@@ -12,7 +12,7 @@ def gemspec
     s.rubyforge_project   = "nanotest"
     s.has_rdoc            =  false
     s.require_path        = "lib"
-    s.version             = "0.9.1"
+    s.version             = "0.9.2"
     s.files               =  File.read("Manifest").strip.split("\n")
 
     s.add_development_dependency 'minitest'
