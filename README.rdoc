@@ -28,8 +28,8 @@ above, or use its method directly:
 
   NanoTest.assert { true }
 
-Its block is expected to return a boolean. If it's false (== false) it fails,
-otherwise it passes. Simple as that.
+Its block is expected to return a boolean. If it's false it fails, otherwise
+it passes. Simple as that.
 
 #assert also accepts a custom failure message (defaults to "assertion failed"):
 

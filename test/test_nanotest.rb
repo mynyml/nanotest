@@ -20,9 +20,17 @@ class TestNanoTest < MiniTest::Unit::TestCase
     assert_empty NanoTest::FAILURES
   end
 
-  test "assertion fails" do
+  test "assertion fails (false)" do
     out, err = capture_io do
       NanoTest.assert { false }
+    end
+    assert_equal 'F', out
+    refute_empty NanoTest::FAILURES
+  end
+
+  test "assertion fails (nil)" do
+    out, err = capture_io do
+      NanoTest.assert { nil }
     end
     assert_equal 'F', out
     refute_empty NanoTest::FAILURES

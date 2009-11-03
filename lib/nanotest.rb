@@ -3,8 +3,8 @@ module NanoTest
 
   FAILURES = []
 
-  def assert(msg="assertion failed",file=nil,line=nil,&block)
-    if block.call == false
+  def assert(msg="assertion failed", file=nil, line=nil, &block)
+    unless block.call
       file ||= caller.first.split(':')[0]
       line ||= caller.first.split(':')[1]
       FAILURES << "(%s:%0.3d) %s" % [file,line,msg]
