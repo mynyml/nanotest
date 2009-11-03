@@ -39,6 +39,11 @@ otherwise it passes. Simple as that.
 That's pretty much it. Maximum Simplicity. If you insist on doing something
 fancy, check out the wiki for a few tips and tricks.
 
+=== Stats
+
+  $ rake -s loc
+  lib files contain 15 SLOCs
+
 === Links
 
 source:: http://github.com/mynyml/nanotest
