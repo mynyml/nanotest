@@ -68,3 +68,18 @@ task :yardoc do
   options = %w( -o doc/yard --readme README.rdoc --files LICENSE )
   YARD::CLI::Yardoc.run *(options + files)
 end
+
+# --------------------------------------------------
+# Stats
+# --------------------------------------------------
+desc "LOC count"
+task(:loc) do
+  loc = 0
+  Dir['lib/**/*'].each do |file|
+    File.read(file).each_line do |line|
+      loc += 1 unless line.strip.empty? || line.strip =~ /^#/
+    end
+  end
+  puts "lib files contain #{loc} SLOCs"
+end
+
