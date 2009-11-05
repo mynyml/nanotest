@@ -6,6 +6,7 @@ Rakefile
 examples.rb
 gem.watchr
 lib/nanotest.rb
+nanotest.gemspec
 specs.watchr
 test/test_helper.rb
 test/test_nanotest.rb
