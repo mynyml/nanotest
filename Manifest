@@ -7,9 +7,11 @@ examples.rb
 gem.watchr
 lib/nanotest.rb
 lib/nanotest/README_SPEC.rdoc
+lib/nanotest/contexts.rb
 lib/nanotest/spec.rb
 nanotest.gemspec
 specs.watchr
+test/test_contexts.rb
 test/test_helper.rb
 test/test_nanotest.rb
 test/test_spec.rb
