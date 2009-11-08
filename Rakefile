@@ -7,8 +7,11 @@ namespace(:test) do
 
   desc "Run all tests"
   task(:all) do
-    system(%(ruby -rubygems -I.:lib test/test_nanotest.rb))
-    system(%(ruby -rubygems -I.:lib -e"require 'test/test_contexts'; require 'test/test_spec'"))
+    system %(ruby -rubygems -I.:lib test/test_nanotest.rb)
+    system %(ruby -rubygems -I.:lib -e"#{<<-END}")
+      require 'test/test_spec'
+      require 'test/test_contexts'
+    END
   end
 
   desc "Run all tests on multiple ruby versions (requires rvm)"
