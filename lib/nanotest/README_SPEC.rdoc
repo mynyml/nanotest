@@ -1,0 +1,63 @@
+=== Summary
+
+Extremely mynymal spec extension for nanotest[http://github.com/mynyml/nanotest].
+Allows assertions with Object#must / Object#wont.
+
+=== Install
+
+  gem install nanotest_spec --source http://gemcutter.org
+
+=== Examples
+
+  require 'nanotest'
+  require 'nanotest/spec'
+  include  NanoTest
+
+  'foo'.size.must == 3
+  'bar'.size.wont <= 1
+
+  [1,2,3].must.include?(1)
+  [1,2,3].wont.include?(4)
+
+  # assertions also can be chained
+  [1,2,3].must.include?(1).
+          must.include?(2).
+          must.include?(3).
+          wont.include?(4)
+
+  # must/wont are full assertion proxies, so methods sent to it work as
+  # expected (i.e. they accept args and blocks)
+  [1,2,3].must.detect {|i| i == 2 }
+
+=== API
+
+Provides two methods, Object#must and Object#wont.
+The words "must" and "wont" for assertions follow minitest/spec's convention.
+(I for one appreciate that they both contain the same number of characters)
+
+If you prefer other words, simply alias must/wont
+
+  class Object
+    alias :should :must
+    alias :should_not :wont
+
+    # or even, from the non-intuitive-yet-also-intuitive?! department:
+    alias :should! :wont
+  end
+
+=== See Also
+
+nanotest:: http://github.com/mynyml/nanotest
+
+=== Stats
+
+  $ rake -s loc
+  lib files contain 24 SLOCs
+
+=== Links
+
+source:: http://github.com/mynyml/nanotest_spec
+docs::   http://rdoc.info/projects/mynyml/nanotest_spec
+wiki::   http://wiki.github.com/mynyml/nanotest_spec
+bugs::   http://github.com/mynyml/nanotest_spec/issues
+

@@ -1,8 +1,13 @@
+require 'minitest/autorun'
 require 'test/test_helper'
+require 'lib/nanotest'
 
 class TestNanoTest < MiniTest::Unit::TestCase
+  def self.test(name, &block)
+    define_method("test_#{name.gsub(/\s/,'_').downcase}", &block)
+  end
 
-  def teardown
+  def setup
     NanoTest::FAILURES.clear
   end
 

@@ -1,13 +1,7 @@
-require 'minitest/autorun'
-require 'nanotest'
+# must be loaded after test frameworks, since redgreen and phocus will both
+# try to detect them
 begin
   require 'redgreen'
   require 'phocus'
 rescue LoadError, RuntimeError
-end
-
-class MiniTest::Unit::TestCase
-  def self.test(name, &block)
-    define_method("test_#{name.gsub(/\s/,'_').downcase}", &block)
-  end
 end
