@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project   = "nanotest"
   s.has_rdoc            =  false
   s.require_path        = "lib"
-  s.version             = "0.9.2"
+  s.version             = "0.9.3"
   s.files               =  File.read("Manifest").strip.split("\n")
 
   s.add_development_dependency 'minitest'
