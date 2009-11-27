@@ -1,4 +1,4 @@
-module NanoTest
+module Nanotest
   extend self
 
   @@failures, @@dots = [], []
@@ -14,7 +14,7 @@ module NanoTest
     end
   end
 
-  def self.results
+  def self.results #:nodoc:
     @@dots.join + "\n" + @@failures.join("\n")
   end
 

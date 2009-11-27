@@ -1,6 +1,6 @@
 === Summary
 
-Extremely mynymal test framework. Perfect for DIY lovers. NanoTest provides
+Extremely mynymal test framework. Perfect for DIY lovers. Nanotest provides
 the bare mynymum needed; for everything else, there's ruby.
 
 === Install
@@ -10,7 +10,7 @@ the bare mynymum needed; for everything else, there's ruby.
 === Examples
 
   require 'nanotest'
-  include  NanoTest
+  include  Nanotest
 
   assert {     1 == 1 }
   assert {     2  > 1 }
@@ -26,10 +26,10 @@ There's also a real life example at http://github.com/mynyml/phocus/blob/master/
 
 === API
 
-NanoTest has a single method: #assert. You can either include NanoTest as
+Nanotest has a single method: #assert. You can either include Nanotest as
 above, or use its method directly:
 
-  NanoTest.assert { true }
+  Nanotest.assert { true }
 
 Its block is expected to return a boolean. If it's false it fails, otherwise
 it passes. Simple as that.
