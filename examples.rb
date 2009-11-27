@@ -1,29 +1,31 @@
 require 'nanotest'
-include NanoTest
+include  Nanotest
 
 class Foo
-  attr_accessor :a
+  attr_accessor :bar
 end
 
 @foo = Foo.new
 
 assert { @foo.is_a?(Foo) }
-assert { @foo.respond_to?(:a) }
-assert { @foo.a.nil? }
+assert { @foo.respond_to?(:bar) }
+assert { @foo.bar.nil? }
 
-@foo.a  = 'a'
-@foo.a << 'b'
+@foo.bar  = 'a'
+@foo.bar << 'b'
 
-assert { @foo.a == 'ab' }
+assert {     @foo.bar == 'ab' }
+assert { not @foo.bar == 'xy' }
 
-@foo.a = nil
+@foo.bar = nil
 
-assert { @foo.a == 'a' }
+assert { @foo.bar == 'ab' }
 assert('boom') { false }
 
 __END__
 output:
 
-....FF
+.....FF
 (examples.rb:021) assertion failed
 (examples.rb:022) boom
+
