@@ -10,16 +10,19 @@ the bare mynymum needed; for everything else, there's ruby.
 === Examples
 
   require 'nanotest'
-  include NanoTest
+  include  NanoTest
 
-  assert { 1 == 1 }
-  assert { 1 >= 1 }
-  assert { 1 == 2 } #line 12
+  assert {     1 == 1 }
+  assert {     2  > 1 }
+  assert { not 1  > 2 }
+  assert {     1 == 2 } #line 12
 
 outputs:
 
-  ..F
+  ...F
   (examples.rb:012) assertion failed
+
+There's also a real life example at http://github.com/mynyml/phocus/blob/master/test/test_phocus.rb
 
 === API
 
@@ -42,7 +45,7 @@ fancy, check out the wiki for a few tips and tricks.
 === Stats
 
   $ rake -s loc
-  lib files contain 15 SLOCs
+  lib files contain 18 SLOCs
 
 === Links
 
