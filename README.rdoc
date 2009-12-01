@@ -1,5 +1,5 @@
-"Frustra fit per plura quod potest fieri per pauciora." -- William of Ockham
-<em>"It is futile to do with more things that which can be done with fewer."</em>
+<em>"Frustra fit per plura quod potest fieri per pauciora."</em> --William of Ockham
+"It is futile to do with more things that which can be done with fewer."
 
 === Summary
 
@@ -20,12 +20,12 @@ the bare mynymum needed; for everything else, there's ruby.
   assert { not 1  > 2 }
   assert {     1 == 2 } #line 12
 
-outputs:
+  outputs:
 
   ...F
   (examples.rb:012) assertion failed
 
-There's also a real life example at http://github.com/mynyml/phocus/blob/master/test/test_phocus.rb
+See the phocus gem for a "real life example"[http://github.com/mynyml/phocus/blob/master/test/test_phocus.rb].
 
 === API
 
@@ -48,7 +48,7 @@ fancy, check out the wiki for a few tips and tricks.
 === Stats
 
   $ rake -s loc
-  lib files contain 18 SLOCs
+  lib contains 18 SLOCs
 
 === Links
 
@@ -56,7 +56,4 @@ source:: http://github.com/mynyml/nanotest
 docs::   http://rdoc.info/projects/mynyml/nanotest
 wiki::   http://wiki.github.com/mynyml/nanotest
 bugs::   http://github.com/mynyml/nanotest/issues
-
-
-tl;dr: is small test fw. is fun. assert("msg") { bool }
 
