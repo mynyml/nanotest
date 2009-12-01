@@ -1,3 +1,6 @@
+"Frustra fit per plura quod potest fieri per pauciora." -- William of Ockham
+<em>"It is futile to do with more things that which can be done with fewer."</em>
+
 === Summary
 
 Extremely mynymal test framework. Perfect for DIY lovers. Nanotest provides
