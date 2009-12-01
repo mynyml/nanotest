@@ -25,17 +25,14 @@ the bare mynymum needed; for everything else, there's ruby.
   ...F
   (examples.rb:012) assertion failed
 
-See the phocus gem for a "real life example"[http://github.com/mynyml/phocus/blob/master/test/test_phocus.rb].
+See actual use at http://github.com/mynyml/phocus/blob/master/test/test_phocus.rb
 
 === API
 
 Nanotest has a single method: #assert. You can either include Nanotest as
-above, or use its method directly:
-
-  Nanotest.assert { true }
-
-Its block is expected to return a boolean. If it's false it fails, otherwise
-it passes. Simple as that.
+above, or use its method directly: <tt>Nanotest.assert { true }</tt>. Its
+block is expected to return a boolean. If it's false it fails, otherwise it
+passes. Simple as that.
 
 #assert also accepts a custom failure message (defaults to "assertion failed"):
 
