@@ -47,10 +47,14 @@ fancy, check out the wiki for a few tips and tricks.
   $ rake -s loc
   lib contains 18 SLOCs
 
+=== See Also
+
+nanotest/extensions[http://github.com/mynyml/nanotest_extensions]
+
 === Links
 
-source:: http://github.com/mynyml/nanotest
-docs::   http://rdoc.info/projects/mynyml/nanotest
-wiki::   http://wiki.github.com/mynyml/nanotest
-bugs::   http://github.com/mynyml/nanotest/issues
+code:: http://github.com/mynyml/nanotest
+docs:: http://rdoc.info/projects/mynyml/nanotest
+wiki:: http://wiki.github.com/mynyml/nanotest
+bugs:: http://github.com/mynyml/nanotest/issues
 
