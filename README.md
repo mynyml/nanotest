@@ -49,12 +49,12 @@ fancy, check out the wiki for a few tips and tricks.
 
 ### See Also
 
-* nanotest/extensions: http://github.com/mynyml/nanotest_extensions
+* nanotest/extensions: <http://github.com/mynyml/nanotest_extensions>
 
 ### Links
 
-* code: http://github.com/mynyml/nanotest
-* docs: http://rdoc.info/projects/mynyml/nanotest
-* wiki: http://wiki.github.com/mynyml/nanotest
-* bugs: http://github.com/mynyml/nanotest/issues
+* code: <http://github.com/mynyml/nanotest>
+* docs: <http://rdoc.info/projects/mynyml/nanotest>
+* wiki: <http://wiki.github.com/mynyml/nanotest>
+* bugs: <http://github.com/mynyml/nanotest/issues>
 
