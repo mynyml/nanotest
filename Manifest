@@ -1,11 +1,12 @@
 .gitignore
 LICENSE
 Manifest
-README.rdoc
+README.md
 Rakefile
 examples.rb
 gem.watchr
 lib/nanotest.rb
+markdown.watchr
 nanotest.gemspec
 specs.watchr
 test/test_helper.rb
