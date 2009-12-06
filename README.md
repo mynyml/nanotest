@@ -25,7 +25,7 @@ the bare mynymum needed; for everything else, there's ruby.
     ...F
     (examples.rb:012) assertion failed
 
-See actual use at http://github.com/mynyml/phocus/blob/master/test/test_phocus.rb
+See actual use at <http://github.com/mynyml/phocus/blob/master/test/test_phocus.rb>
 
 ### API
 
