@@ -15,14 +15,17 @@ class ::String
 end
 
 default_action do
-  puts "Translating README.md"
-  Pathname('README.md').read.md2html.save_as('doc/README.html')
+  md   = Pathname('README.md').expand_path
+  html = Pathname('doc/README.html').expand_path
+
+  puts "Translating #{md.basename} (file://#{html})"
+  md.read.md2html.save_as(html)
 end
 
 # --------------------------------------------------
 # Watchr Rules
 # --------------------------------------------------
-watch( '^README.md' )
+watch( '^README\.md' )
 
 # --------------------------------------------------
 # Signal Handling

@@ -50,6 +50,6 @@ task(:loc) do
       loc += 1 unless line.strip.empty? || line.strip =~ /^#/
     end
   end
-  puts "lib contain #{loc} SLOCs"
+  puts "lib contains #{loc} SLOCs"
 end
 

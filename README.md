@@ -8,7 +8,7 @@ the bare mynymum needed; for everything else, there's ruby.
 
 ### Install
 
-    gem install nanotest --source http://gemcutter.org
+    gem install nanotest
 
 ### Examples
 
@@ -49,7 +49,8 @@ fancy, check out the wiki for a few tips and tricks.
 
 ### See Also
 
-* nanotest/extensions: <http://github.com/mynyml/nanotest_extensions>
+* [nanotest/extensions][1]
+* [redgreen][2]
 
 ### Links
 
@@ -58,3 +59,6 @@ fancy, check out the wiki for a few tips and tricks.
 * wiki: <http://wiki.github.com/mynyml/nanotest>
 * bugs: <http://github.com/mynyml/nanotest/issues>
 
+
+[1]: http://github.com/mynyml/nanotest_extensions
+[2]: http://github.com/mynyml/redgreen
