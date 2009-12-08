@@ -3,8 +3,8 @@
 
 ### Summary
 
-Extremely mynymal test framework. Perfect for DIY lovers. Nanotest provides
-the bare mynymum needed; for everything else, there's ruby.
+Extremely minimal test framework. Perfect for DIY lovers. Nanotest provides
+the bare minimum needed; for everything else, there's ruby.
 
 ### Install
 
