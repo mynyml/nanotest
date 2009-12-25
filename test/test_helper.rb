@@ -3,6 +3,7 @@ require 'nanotest'
 begin
   require 'redgreen'
   require 'phocus'
+  require 'ruby-debug'
 rescue LoadError, RuntimeError
 end
 

@@ -76,5 +76,15 @@ class TestNanotest < MiniTest::Unit::TestCase
   test "displays results with no assertions" do
     assert_empty Nanotest.results.strip
   end
+
+  test "handles origin lines that contain colons" do
+    stack = ['o:hai:e:20:blah']
+    Nanotest.assert('', nil, nil, stack) { false }
+    assert_equal "(o:hai:e:020) ", Nanotest.failures.last
+
+    stack = ['o:hai:e:20']
+    Nanotest.assert('', nil, nil, stack) { false }
+    assert_equal "(o:hai:e:020) ", Nanotest.failures.last
+  end
 end
 

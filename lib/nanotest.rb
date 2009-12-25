@@ -3,11 +3,10 @@ module Nanotest
 
   @@failures, @@dots = [], []
 
-  def assert(msg=nil, file=nil, line=nil, &block)
+  def assert(msg=nil, file=nil, line=nil, stack=caller, &block)
     unless block.call
-      file ||= caller.first.split(':')[0]
-      line ||= caller.first.split(':')[1]
-      @@failures << "(%s:%0.3d) %s" % [file, line, msg || "assertion failed"]
+      f,l = stack.first.match(/(.*):(\d+)/)[1..2]
+      @@failures << "(%s:%0.3d) %s" % [file || f, line || l, msg || "assertion failed"]
       @@dots << 'F'
     else
       @@dots << '.'
