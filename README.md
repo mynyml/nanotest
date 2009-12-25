@@ -45,7 +45,7 @@ fancy, check out the wiki for a few tips and tricks.
 ### Stats
 
     $ rake -s loc
-    lib contains 18 SLOCs
+    lib contains 17 SLOCs
 
 ### See Also
 
