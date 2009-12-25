@@ -34,7 +34,7 @@ desc "Generate YARD Documentation"
 task :yardoc do
   require 'yard'
   files   = %w( lib/**/*.rb )
-  options = %w( -o doc/yard --readme README.rdoc --files LICENSE )
+  options = %w( -o doc/yard --readme README.md --files LICENSE )
   YARD::CLI::Yardoc.run *(options + files)
 end
 
