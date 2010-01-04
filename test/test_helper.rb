@@ -1,5 +1,4 @@
 require 'minitest/autorun'
-require 'nanotest'
 begin
   require 'redgreen'
   require 'phocus'
