@@ -51,6 +51,7 @@ fancy, check out the wiki for a few tips and tricks.
 
 * [nanotest/extensions][1]
 * [redgreen][2]
+* [RR][3]                   Awesome mocking framework that can be used standalone
 
 ### Links
 
@@ -62,3 +63,4 @@ fancy, check out the wiki for a few tips and tricks.
 
 [1]: http://github.com/mynyml/nanotest_extensions
 [2]: http://github.com/mynyml/redgreen
+[3]: http://github.com/btakita/rr
