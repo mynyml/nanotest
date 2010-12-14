@@ -51,7 +51,7 @@ fancy, check out the wiki for a few tips and tricks.
 
 * [nanotest/extensions][1]
 * [redgreen][2]
-* [RR][3]                   Awesome mocking framework that can be used standalone
+* [RR][3]
 
 ### Links
 
