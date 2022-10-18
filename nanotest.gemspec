@@ -5,6 +5,7 @@ Gem::Specification.new do |s|
   s.author              = "Martin Aumont"
   s.email               = "mynyml@gmail.com"
   s.homepage            = "http://github.com/mynyml/nanotest"
+  s.license             = "MIT"
   s.rubyforge_project   = "nanotest"
   s.has_rdoc            =  false
   s.require_path        = "lib"
