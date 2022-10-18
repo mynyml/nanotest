@@ -8,7 +8,7 @@ namespace(:test) do
   desc "Run all tests"
   task(:all) do
     tests = Dir['test/**/test_*.rb'] - ['test/test_helper.rb']
-    cmd = "ruby -rubygems -I.:lib -e'%w( #{tests.join(' ')} ).each {|file| require file }'"
+    cmd = "ruby -I.:lib -e'%w( #{tests.join(' ')} ).each {|file| require file }'"
     puts(cmd) if ENV['VERBOSE']
     exit system(cmd)
   end
